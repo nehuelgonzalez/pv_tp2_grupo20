@@ -1,1 +1,44 @@
-//Ejercicio16
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 16</title>
+</head>
+<body>
+    
+    <script>
+
+         let sumarRango = (goku, vegeta) =>{
+            let suma = 0;
+            for(let i = goku; i <= vegeta; i++){
+                suma += i;
+            }
+            return suma;
+
+        }
+        
+        for(i=0 ; i== 0 || numero1 > numero2; i++){
+            do{
+
+                numero1 = Number(prompt("Ingrese el valor inicial:"));
+            } while(Number.isNaN(numero1) == true || Number.isInteger(numero1) == false);
+            
+                
+             do{
+
+                numero2 = Number(prompt("Ingrese el valor final:"));
+            } while(Number.isNaN(numero2) == true || Number.isInteger(numero2) == false);
+
+            // numero2 = parseInt(prompt("Ingrese el valor final:"));
+
+        }
+
+       let resultado = sumarRango(numero1, numero2);
+       document.write(`La suma de los números entre ${numero1} y ${numero2} es: ${resultado}`);
+
+
+
+    </script>
+</body>
+</html>

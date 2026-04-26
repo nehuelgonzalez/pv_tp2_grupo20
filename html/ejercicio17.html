@@ -1,1 +1,31 @@
-//Ejercicio17
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 17</title>
+</head>
+<body>
+
+    
+    <script>
+        
+
+        const contarLetra = (goku) => {
+            let contador = 0;
+            for (let i = 0; i < goku.length; i++) {
+                if (goku[i].toLowerCase() == 'a') {
+                    contador++;
+                }
+            }
+            
+            console.log("hola")
+            document.write(`La letra "a" aparece ${contador} veces en la palabra "${goku}".`);
+        }
+        let palabra = prompt("Ingrese una palabra:");
+        contarLetra(palabra);
+
+    </script>
+
+</body>
+</html>

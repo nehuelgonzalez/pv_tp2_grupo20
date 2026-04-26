@@ -1,1 +1,39 @@
-//Ejercicio15
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+</head>
+<body>
+    <script>
+        let meses = [
+        "Enero", "Febrero", "Marzo", "Abril",
+        "Mayo", "Junio", "Julio", "Agosto",
+        "Septiembre", "Octubre", "Noviembre", "Diciembre"
+        ];
+
+        let retornarMes = (numero) => {
+            if (numero >= 1 && numero <=12){
+                return meses[numero-1];
+
+            } else {
+                return null;
+            }
+
+        }
+
+        do{
+
+             numero1 = Number(prompt("Ingrese un numero entero:"));
+          } while(Number.isNaN(numero1) == true || Number.isInteger(numero1) == false);
+        if (retornarMes(numero1) != null){
+            document.write(`El mes correspondiente al numero ${numero1} es: ${retornarMes(numero1)}`);
+        } else {
+            document.write("El numero ingresado no corresponde a un mes del año.");
+        }
+
+
+    </script>
+</body>
+</html>
