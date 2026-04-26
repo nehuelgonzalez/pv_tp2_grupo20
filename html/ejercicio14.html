@@ -1,1 +1,43 @@
-//Ejercicio14
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+<body>
+    <script>
+        
+
+
+        const duplicar = (sayayines) => {
+
+            sayayines.forEach((x,y,z)=>{
+                z[y] = x*2;
+            })
+            // document.write(`Los numeros duplicados son: ${sayayines}`);
+
+        }
+        let numeroz,numeroAgregar;
+        do{
+             numeroz = Number(prompt("Ingrese la cantidad de numeros: "));
+          } while(Number.isNaN(numeroz) == true || Number.isInteger(numeroz) == false || (numeroz <= 0));
+
+
+        let tsufurujines= [];
+        for(let i=1; i <= numeroz; i++){
+            do{
+                numeroAgregar = Number(prompt("Ingrese numero: " + i + ":"));
+            } while(Number.isNaN(numeroAgregar) == true || Number.isInteger(numeroAgregar) == false);
+
+            tsufurujines.push(numeroAgregar);
+        }
+        duplicar(tsufurujines);
+        document.write(`Los numeros duplicados son: ${tsufurujines}`);
+        
+
+    </script>
+    
+
+</body>
+</html>

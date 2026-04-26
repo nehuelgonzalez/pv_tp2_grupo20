@@ -1,1 +1,40 @@
-//Ejercicio13
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+</head>
+<body>
+    <script>
+
+        const mostrarArreglo = (sayayines) => {
+
+            sayayines.forEach((x,y,z)=>{
+                document.write(`El numero ${x} esta en la posicion ${y} <br>`);
+            })
+            // document.write(`Los numeros duplicados son: ${sayayines}`);
+
+        }
+        let numeroz,numeroAgregar;
+        do{
+             numeroz = Number(prompt("Ingrese la cantidad de numeros: "));
+          } while(Number.isNaN(numeroz) == true || Number.isInteger(numeroz) == false || (numeroz <= 0));
+
+
+        let tsufurujines= [];
+        for(let i=1; i <= numeroz; i++){
+            do{
+                numeroAgregar = Number(prompt("Ingrese numero: " + i + ":"));
+            } while(Number.isNaN(numeroAgregar) == true || Number.isInteger(numeroAgregar) == false);
+
+            tsufurujines.push(numeroAgregar);
+        }
+        mostrarArreglo(tsufurujines);
+
+    </script>
+
+
+
+</body>
+</html>
