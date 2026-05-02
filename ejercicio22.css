@@ -1,0 +1,16 @@
+#input_text{
+    padding: 20px;
+    border: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+#parrafo_text_22{
+    font-size: 18px;
+    color: black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    min-height: 30px;
+}
