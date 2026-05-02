@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: #000c;
+    margin: auto;
+    font-family: 'Press Start 2P', cursive;
+}
+
+header {
+    padding: 50px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #c29514;
+    margin: 50px;
+}
+main {
+    background-position: center;
+    margin: auto;
+}
+fieldset {
+    width: 10px;
+    margin: 20px;
+    display: inline-flex;
+}
+fieldset:hover{
+    border-color:black;
+    border-radius:0%;
+}
+.box {
+    margin: 10px;
+    padding: 10px;
+    background-color: #b93f1a;
+    width: 150px;
+}
+.box:hover {
+    outline: 10px solid #d3d2d2;
+}
+
+.box-lavel {
+    display: flex;
+    align-items: center ;
+    gap: 8px;
+    margin-top: 10px;
+}
+section {
+    display: flex;
+}
+#caja1, #caja2, #caja3 {
+    margin: auto;
+    width: 200px;
+    margin-top: 10px;
+}
+.caja-resultado {
+    display: none;
+}
+img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10%;
+}
+.animacion {
+  display: block;
+  animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {/* aparecer es una caracteristica de la propiedad animation con keyframe se lo define */
+  from { 
+    opacity: 0;
+    transform: translateY(20px) ;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* from y to Son simplemente alias de 0% y 100%, una forma más legible de escribir el inicio y el fin de una animación.*/
+
+footer {
+    border-top: 10px solid #726e6e;
+    background-color:#c29514;
+    padding: 50px;
+    margin-top: 100px;
+}
+
