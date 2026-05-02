@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0b0b0b;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+/* SELECTS estilo energía */
+select {
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid #ff6600;
+  font-weight: bold;
+  background: black;
+  color: white;
+  box-shadow: 0 0 10px #ff6600;
+  transition: 0.3s;
+}
+
+select:focus {
+  box-shadow: 0 0 25px #ff0000, 0 0 50px #ff6600;
+  transform: scale(1.05);
+}
+
+/* ⚡ KAMEHAMEHA */
+.kamehameha {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 12px;
+  background: radial-gradient(circle, #ff6600, #ff0000);
+  box-shadow: 0 0 20px #ff3300, 0 0 40px #ff6600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: energia 0.4s infinite alternate;
+  position: relative;
+}
+
+/* energía vibrando */
+@keyframes energia {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  100% {
+    transform: scale(1.15);
+    filter: brightness(1.5);
+  }
+}
+
+/* shake fuerte */
+@keyframes shake {
+  0% { transform: translateX(-2px); }
+  100% { transform: translateX(2px); }
+}
+
+/* 💥 explosión */
+.explosion {
+  animation: explosion 0.6s ease-out;
+}
+
+@keyframes explosion {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #fff;
+  }
+  50% {
+    transform: scale(2);
+    box-shadow: 0 0 80px #ff0000, 0 0 120px #ff6600;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
