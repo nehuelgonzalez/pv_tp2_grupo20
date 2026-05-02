@@ -1,0 +1,96 @@
+.contenedor {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+select {
+  width: 200px;
+  padding: 8px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  color: #000;
+  animation: cambioColor 5s infinite linear;
+  color: black;
+  font-weight: bold;
+  /* transition: background-color 1s ease; */
+}
+
+/* Animación de colores */
+@keyframes cambioColor {
+  0% {
+    background-color: #ff4d4d; /* rojo */
+  }
+  25% {
+    background-color: #4dff88; /* verde */
+  }
+  50% {
+    background-color: #4da6ff; /* azul */
+  }
+  75% {
+    background-color: #ffd24d; /* amarillo */
+  }
+  100% {
+    background-color: #ff4d4d;
+  }
+}
+/* select:hover {
+  background-color: blue;
+} */
+
+body {
+  margin: 0;
+  height: 100vh;              /* ocupa toda la pantalla */
+  display: flex;
+  justify-content: center;    
+  align-items: center;        
+  /*gap: 500px;   */               
+  font-family: Arial, sans-serif;
+}
+
+/* texto del medio */
+.kamehameha {
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  padding: 10px 15px;
+  border-radius: 10px;
+
+  background: radial-gradient(circle, #ff6600, #ff0000);
+  box-shadow: 0 0 15px #ff3300, 0 0 30px #ff6600;
+
+  animation: energia 0.6s infinite alternate;
+}
+
+/* animación tipo energía */
+@keyframes shake {
+  from { transform: translateY(-2px); }
+  to { transform: translateY(2px); }
+}
+
+/* tu animación de colores */
+@keyframes cambioColor {
+  0% { background-color: #ff4d4d; }
+  25% { background-color: #4dff88; }
+  50% { background-color: #4da6ff; }
+  75% { background-color: #ffd24d; }
+  100% { background-color: #ff4d4d; }
+}
+@keyframes energia {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #ff3300, 0 0 20px #ff6600;
+  }
+
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #ff0000, 0 0 50px #ff6600;
+  }
+}
+.kamehameha {
+  animation:
+    energia 0.6s infinite alternate,
+    shake 0.1s infinite;
+}
