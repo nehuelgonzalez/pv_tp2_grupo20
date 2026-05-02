@@ -1,0 +1,12 @@
+.main-19 button{
+    
+    background-color:antiquewhite; 
+    color: black;
+    border-radius: 10px;
+    font-size: 16px;
+    box-shadow: 2px 4px 8px gray;
+    border: none;
+}
+.main-19 button:hover{
+    background-color:aqua;
+}
