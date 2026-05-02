@@ -1,0 +1,6 @@
+#parrafo {
+    padding: 10px;
+    border: 1px solid black;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
