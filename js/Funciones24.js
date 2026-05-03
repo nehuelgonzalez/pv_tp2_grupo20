@@ -1,11 +1,11 @@
 export const imagenes = {
   //clave     //elemento ruta de imagen
-    "c++": "../js/img_de_24/cppimage.jpg",
-    "rust": "../js/img_de_24/rustimage.jpg",
-    "phyton": "../js/img_de_24/phiton.png",
-    "r": "../js/img_de_24/Rimage.jpg",
-    "sw": "../js/img_de_24/Swiftimage.jpg",
-    "Kot": "../js/img_de_24/kotlinimage.jpg"
+  "c++": "/img_de_24/cppimage.jpg",
+  "rust": "/img_de_24/rustimage.jpg",
+  "phyton": "/img_de_24/phiton.png",
+  "r": "/img_de_24/Rimage.jpg",
+  "sw": "/img_de_24/Swiftimage.jpg",
+  "Kot": "/img_de_24/kotlinimage.jpg"
 }
 
 
